@@ -12,6 +12,8 @@ import {Component} from '@angular/core';
 
 
       <img [src]="src" [width]="width">
+
+      <app-home  [pageName]="title"   ></app-home>
       <!--   <img src="{{src}}" [width]="width"  >-->
   `,
   // styleUrls: ['./app.component.css']
