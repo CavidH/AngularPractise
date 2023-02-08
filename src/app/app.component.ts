@@ -6,9 +6,9 @@ import {Component} from '@angular/core';
   template: `
       <p>{{title}}</p>
 
-      <input type="text" [value]="inputContent">
+      <input (keydown.shift.a)="ctsh()"  type="text" [value]="inputContent">
       <br><br>
-      <button (click)="change()">Click Count {{count}}</button><br>
+      <button (click)="change()"  (click)="btn()">Click Count {{count}}</button><br>
 
 
       <img [src]="src" [width]="width">
@@ -28,6 +28,12 @@ export class AppComponent {
   width: number = 150;
   inputContent: string = "Salam";
 
+  ctsh(){
+    alert('shifta')
+  }
+  btn (){
+    alert("Btn Click")
+  }
   change() {
     this.count++;
   }
