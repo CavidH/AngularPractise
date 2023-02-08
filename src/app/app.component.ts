@@ -5,12 +5,14 @@ import {Component} from '@angular/core';
   // templateUrl: './app.component.html',
   template:  `
   <p>{{title}}</p>
-  `
- ,
+  <img [src]="src"  [width]="width"  >
+<!--   <img src="{{src}}" [width]="width"  >-->
+  ` ,
   // styleUrls: ['./app.component.css']
   styles: [`strong{color: cyan}`]
 })
 export class AppComponent {
   title = 'Angular';
-  age: number = 45;
+  src:string='https://angular.io/assets/images/logos/angular/angular.png';
+  width:number=150;
 }
