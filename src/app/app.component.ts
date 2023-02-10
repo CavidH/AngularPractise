@@ -4,7 +4,13 @@ import {Component} from '@angular/core';
   selector: 'app-root1',
   // templateUrl: './app.component.html',
   template: `
-      <label for="t">Active</label>
+    <div [ngSwitch]="title">
+      <div *ngSwitchCase="case2">react</div>
+      <div *ngSwitchDefault> Hech biri : {{title}}</div>
+    </div>
+
+
+      <label for="t">DeActive</label>
       <input id="t" type="checkbox" [value]="isActive" [(ngModel)]="isActive">
 
       <br><br><br>
@@ -48,6 +54,7 @@ import {Component} from '@angular/core';
   }`]
 })
 export class AppComponent {
+  case2="react";
   isActive: boolean=true;
   adlar: string[] = ["Cavid", "Ayxan", "Hesen", "Yunsur"];
   title = 'Angular';
