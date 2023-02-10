@@ -4,34 +4,52 @@ import {Component} from '@angular/core';
   selector: 'app-root1',
   // templateUrl: './app.component.html',
   template: `
-      <input type="text" #hihi value="155S" name="" id="">
-      <h1>{{hihi.value}}</h1>
-      <h1 ngNonBindable>{{hihi.value}}</h1>
+      <label for="t">Active</label>
+      <input id="t" type="checkbox" [value]="isActive" [(ngModel)]="isActive">
 
-      <h1>{{15 + 6565}}</h1>
-      <!--    <h1>{{btn()}}</h1>-->
-      <p>{{title}}</p>
+      <br><br><br>
 
-      <input (keydown.shift.a)="ctsh()"
-             type="text" [value]="title" [(ngModel)]="title"><br>
-      <input type="number" [value]="width" [(ngModel)]="width">
-
-      <br><br>
-
-      <button (click)="change()" (click)="btn()">Click Count {{count}}</button><br>
+      <div *ngIf="isActive;else con">Deaktiv</div>
+      <ng-template #con>
 
 
-      <img [src]="src" [width]="width">
+          <input type="text" #hihi value="155S" name="" id="">
+          <h1>{{hihi.value}}</h1>
+          <h1 ngNonBindable>{{hihi.value}}</h1>
 
-      <app-home [pageName]="title"></app-home>
-      <!--   <img src="{{src}}" [width]="width"  >-->
+          <h1>{{15 + 6565}}</h1>
+          <!--    <h1>{{btn()}}</h1>-->
+          <p>{{title}}</p>
+
+          <input (keydown.shift.a)="ctsh()"
+                 type="text" [value]="title" [(ngModel)]="title"><br>
+          <input type="number" [value]="width" [(ngModel)]="width">
+
+          <br><br>
+
+          <button (click)="change()" (click)="btn()">Click Count {{count}}</button>
+          <br>
+
+
+          <img [src]="src" [width]="width">
+
+          <app-home [pageName]="title"></app-home>
+          <!--   <img src="{{src}}" [width]="width"  >-->
+
+          <div *ngIf="true"><h1>Hello</h1></div>
+          <ul>
+              <li *ngFor="let ad of adlar ;let index =index;">{{index + " - " + ad}}</li>
+          </ul>
+      </ng-template>
   `,
   // styleUrls: ['./app.component.css']
   styles: [`strong {
-      color: #06fdfd
+    color: #06fdfd
   }`]
 })
 export class AppComponent {
+  isActive: boolean=true;
+  adlar: string[] = ["Cavid", "Ayxan", "Hesen", "Yunsur"];
   title = 'Angular';
 
   count: number = 0;
