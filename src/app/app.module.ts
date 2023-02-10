@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {FormsModule} from "@angular/forms";
+import { ShellComponent } from './shell/shell.component';
+import { ExdirDirective } from './directives/exdir.directive';
 //ng generate component Home
 //ng g  c   Home
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ShellComponent,
+    ExdirDirective
   ],
   imports: [
     BrowserModule,
