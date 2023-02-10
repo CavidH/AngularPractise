@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   template: `
     <div [ngSwitch]="title">
       <div *ngSwitchCase="case2">react</div>
-      <div *ngSwitchDefault> Hech biri : {{title}}</div>
+      <div *ngSwitchDefault> <p [ngClass]="'red'">Hech biri : {{title}}</p></div>
     </div>
 
 
@@ -51,7 +51,7 @@ import {Component} from '@angular/core';
   // styleUrls: ['./app.component.css']
   styles: [`strong {
     color: #06fdfd
-  }`]
+  }`,`.red{color: red}`]
 })
 export class AppComponent {
   case2="react";
