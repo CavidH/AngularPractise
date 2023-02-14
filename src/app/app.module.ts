@@ -9,6 +9,7 @@ import { ExdirDirective } from './directives/exdir.directive';
 import { BoldDirective } from './directives/bold.directive';
 import { CustomIfDirective } from './directives/custom-if.directive';
 import { CustomForDirective } from './directives/custom-for.directive';
+import { CustomFor2Directive } from './directives/custom-for2.directive';
 //ng generate component Home
 //ng g  c   Home
 @NgModule({
@@ -19,7 +20,8 @@ import { CustomForDirective } from './directives/custom-for.directive';
     ExdirDirective,
     BoldDirective,
     CustomIfDirective,
-    CustomForDirective
+    CustomForDirective,
+    CustomFor2Directive
   ],
   imports: [
     BrowserModule,

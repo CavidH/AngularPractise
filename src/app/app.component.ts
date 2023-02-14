@@ -9,6 +9,10 @@ import {Component} from '@angular/core';
           <li *appCustomFor="4 let i=index">{{i}} Hello</li>
       </ul>
 
+      <ul>
+          <li *appCustomFor2="names;let el=element;let in=index">{{in}} {{el}}</li>
+      </ul>
+
       <h1 appBold color="cyan">sdlfkdspkfl</h1>
 
       <p [ngClass]="{segoePrintFont:isSegoe}">
@@ -24,6 +28,8 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   //color:string;
+
+  names:string[]=['Cavid','Nicat','ibrahim']
   isVerdana = true;
   isSegoe = true;
 }
