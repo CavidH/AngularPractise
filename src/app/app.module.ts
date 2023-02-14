@@ -10,10 +10,13 @@ import {BoldDirective} from './directives/bold.directive';
 import {CustomIfDirective} from './directives/custom-if.directive';
 import {CustomForDirective} from './directives/custom-for.directive';
 import {CustomFor2Directive} from './directives/custom-for2.directive';
-import {ParentComponent as pc2} from './patenrt_to_child/parent/parent.component';
-import {ParentComponent} from './child_to_parent/parent/parent.component';
+import {ParentComponent} from './patenrt_to_child/parent/parent.component';
+import {ParentComponent as pc2} from './child_to_parent/parent/parent.component';
 import {ChildComponent} from './patenrt_to_child/child/child.component';
 import {ChildComponent as cc2} from './child_to_parent/child/child.component';
+import { Child11Component } from './childToChild/child11/child11.component';
+import { Child22Component } from './childToChild/child22/child22.component';
+import { Parent33Component } from './childToChild/parent33/parent33.component';
 //ng generate component Home
 //ng g  c   Home
 @NgModule({
@@ -29,7 +32,10 @@ import {ChildComponent as cc2} from './child_to_parent/child/child.component';
     ParentComponent,
     ChildComponent,
     cc2,
-    pc2
+    pc2,
+    Child11Component,
+    Child22Component,
+    Parent33Component
   ],
   imports: [
     BrowserModule,

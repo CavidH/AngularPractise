@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-child',
+  selector: 'app-child2',
   template: `
     <hr style="background-color: red;height: 15px">
     <div>
