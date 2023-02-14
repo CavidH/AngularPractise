@@ -4,6 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-root1',
   template: `
 
+    <app-parent></app-parent>
       <div *appCustomIf="true">Hello</div>
       <ul>
           <li *appCustomFor="4 let i=index">{{i}} Hello</li>
