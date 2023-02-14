@@ -8,6 +8,7 @@ import { ShellComponent } from './shell/shell.component';
 import { ExdirDirective } from './directives/exdir.directive';
 import { BoldDirective } from './directives/bold.directive';
 import { CustomIfDirective } from './directives/custom-if.directive';
+import { CustomForDirective } from './directives/custom-for.directive';
 //ng generate component Home
 //ng g  c   Home
 @NgModule({
@@ -17,7 +18,8 @@ import { CustomIfDirective } from './directives/custom-if.directive';
     ShellComponent,
     ExdirDirective,
     BoldDirective,
-    CustomIfDirective
+    CustomIfDirective,
+    CustomForDirective
   ],
   imports: [
     BrowserModule,

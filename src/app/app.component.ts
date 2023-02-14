@@ -5,6 +5,10 @@ import {Component} from '@angular/core';
   template: `
 
       <div *appCustomIf="true">Hello</div>
+      <ul>
+          <li *appCustomFor="4 let i=index">{{i}} Hello</li>
+      </ul>
+
       <h1 appBold color="cyan">sdlfkdspkfl</h1>
 
       <p [ngClass]="{segoePrintFont:isSegoe}">
