@@ -4,7 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-root1',
   template: `
 
-
+<app-lyfe-cycle  data ="salam"></app-lyfe-cycle>
 <!--    <app-parent33></app-parent33>-->
 <!--    <app-parent2></app-parent2>-->
       <div *appCustomIf="true">Hello</div>
