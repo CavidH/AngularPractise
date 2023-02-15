@@ -4,7 +4,8 @@ import {Component} from '@angular/core';
   selector: 'app-root1',
   template: `
 
-    <app-parent33></app-parent33>
+
+<!--    <app-parent33></app-parent33>-->
 <!--    <app-parent2></app-parent2>-->
       <div *appCustomIf="true">Hello</div>
       <ul>

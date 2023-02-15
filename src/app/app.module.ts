@@ -17,6 +17,7 @@ import {ChildComponent as cc2} from './child_to_parent/child/child.component';
 import { Child11Component } from './childToChild/child11/child11.component';
 import { Child22Component } from './childToChild/child22/child22.component';
 import { Parent33Component } from './childToChild/parent33/parent33.component';
+import { LyfeCycleComponent } from './lyfe-cycle/lyfe-cycle.component';
 //ng generate component Home
 //ng g  c   Home
 @NgModule({
@@ -35,7 +36,8 @@ import { Parent33Component } from './childToChild/parent33/parent33.component';
     pc2,
     Child11Component,
     Child22Component,
-    Parent33Component
+    Parent33Component,
+    LyfeCycleComponent
   ],
   imports: [
     BrowserModule,
